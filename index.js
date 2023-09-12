@@ -17,10 +17,10 @@ app.get("/", (req, res) => {
 });
 
 // IMPORT ROUTES
-// const bookRoute = require("./routes/book.route");
+const bookRoute = require("./routes/book.route");
 
 // ROUTES HERE
-// app.use("/api/v1", bookRoute);
+app.use("/api/v1", bookRoute);
 
 // LISTENING SERVER
 app.listen(port, () => {

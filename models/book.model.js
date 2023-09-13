@@ -21,6 +21,24 @@ const bookSchema = new mongoose.Schema(
     coverImage: {
       type: String,
     },
+    reviews: [
+      {
+        comment: {
+          type: String,
+        },
+        rating: {
+          type: Number,
+          min: 1,
+          max: 5,
+        },
+        username: {
+          type: String,
+        },
+        image: {
+          type: String,
+        },
+      },
+    ],
   },
   {
     timestamps: true,
